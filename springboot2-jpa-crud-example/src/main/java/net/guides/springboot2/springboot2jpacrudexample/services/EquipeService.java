@@ -8,4 +8,6 @@ import java.util.List;
 public interface EquipeService {
     List<EquipeDto> listerEquipes();
 
+    boolean associer( Long employeeId, Long equipeId);
+
 }

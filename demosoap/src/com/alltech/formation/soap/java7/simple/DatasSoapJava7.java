@@ -1,9 +1,6 @@
 package com.alltech.formation.soap.java7.simple;
 
-import com.alltech.formation.soap.java7.simple.model.Employee;
-import com.alltech.formation.soap.java7.simple.model.ResponseEmployee;
-import com.alltech.formation.soap.java7.simple.model.ResponseEmployees;
-import com.alltech.formation.soap.java7.simple.model.ResponseEquipes;
+import com.alltech.formation.soap.java7.simple.model.*;
 
 import javax.jws.WebResult;
 import javax.jws.WebService;
@@ -16,8 +13,12 @@ public interface DatasSoapJava7 {
 	@WebResult(partName = "reponse")
 	ResponseEmployees getAllEmployees();
 	ResponseEquipes getAllEquipes();
-	Employee createEmployee(Employee employee);
+	ResponseEmployee createEmployee(Employee employee);
 	ResponseEmployee updateEmployee(Long employeeId, Employee employee);
 	ResponseEmployees deleteEmployee(Long id);
-	Employee getEmployeeById(Long id);
+	ResponseEmployee getEmployeeById(Long id);
+	ResponseEquipes associer( Long employeeId, Long equipeId);
+	ResponseEquipe getEquipeById(Long equipeId);
+	ResponseStatistique getStatistiqueAllEmployees();
+	ResponseStatistique getStatistiqueEquipe(Long id);
 }

@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e381a79f-f7a9-4ca8-a049-e47aec607bb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/DatasSoapJava7.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/DatasSoapJava7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/DatasSoapJava7WS.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/DatasSoapJava7WS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/datas/Datas.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/datas/Datas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/model/Equipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/model/Equipe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/DatasSoapJava7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/DatasSoapJava7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/DatasSoapJava7WS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/DatasSoapJava7WS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/model/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/model/Equipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/DatasSoapJava7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/DatasSoapJava7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEmployees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/DatasSoapJava7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/DatasSoapJava7WSService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Equipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ObjectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEmployees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEquipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEquipes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseStatistique.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Statistique.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/StatistiqueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/StatistiqueServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,5 +86,27 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -46,6 +46,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Statistique }
+     * 
+     */
+    public Statistique createStatistique() {
+        return new Statistique();
+    }
+
+    /**
+     * Create an instance of {@link ResponseEquipe }
+     * 
+     */
+    public ResponseEquipe createResponseEquipe() {
+        return new ResponseEquipe();
+    }
+
+    /**
      * Create an instance of {@link Employee }
      * 
      */
@@ -67,6 +83,14 @@ public class ObjectFactory {
      */
     public ResponseEmployee createResponseEmployee() {
         return new ResponseEmployee();
+    }
+
+    /**
+     * Create an instance of {@link ResponseStatistique }
+     * 
+     */
+    public ResponseStatistique createResponseStatistique() {
+        return new ResponseStatistique();
     }
 
 }
