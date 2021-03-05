@@ -10,16 +10,18 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour responseEmployees complex type.
+ * <p>Classe Java pour equipe complex type.
  * 
  * <p>Le fragment de schema suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="responseEmployees">
+ * &lt;complexType name="equipe">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="employees" type="{http://simple.java7.soap.formation.alltech.com/}employee" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
+ *         &lt;element name="nom" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,13 +31,17 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "responseEmployees", propOrder = {
-    "employees"
+@XmlType(name = "equipe", propOrder = {
+    "employees",
+    "id",
+    "nom"
 })
-public class ResponseEmployees {
+public class Equipe {
 
     @XmlElement(nillable = true)
     protected List<Employee> employees;
+    protected Long id;
+    protected String nom;
 
     /**
      * Gets the value of the employees property.
@@ -64,6 +70,54 @@ public class ResponseEmployees {
             employees = new ArrayList<Employee>();
         }
         return this.employees;
+    }
+
+    /**
+     * Obtient la valeur de la propriete id.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Long }
+     *     
+     */
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * Definit la valeur de la propriete id.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Long }
+     *     
+     */
+    public void setId(Long value) {
+        this.id = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriete nom.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNom() {
+        return nom;
+    }
+
+    /**
+     * Definit la valeur de la propriete nom.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNom(String value) {
+        this.nom = value;
     }
 
 }

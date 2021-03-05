@@ -7,12 +7,9 @@ import java.util.Map;
 
 import javax.validation.Valid;
 
-import net.guides.springboot2.springboot2jpacrudexample.datas.MockEquipe;
-import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.DatasSoapJava7;
-import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.DatasSoapJava7WSService;
-import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.Employee;
 import net.guides.springboot2.springboot2jpacrudexample.dto.EquipeDto;
 import net.guides.springboot2.springboot2jpacrudexample.services.EmployeeService;
+import net.guides.springboot2.springboot2jpacrudexample.services.EquipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -37,45 +34,52 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
 
+	@Autowired
+	EquipeService equipeService;
+
+
+	/****************	URIs Employees	***********************/
 	@GetMapping("/employees")
 	public List<EmployeeDto> getAllEmployees() {
 		return employeeService.listerEmployees();
 	}
 
-	@GetMapping("/equipes")
-	public List<EquipeDto> getAllEquipes() {
-		return MockEquipe.getDatas();
-
-	}
 
 	@GetMapping("/employees/{id}")
-	public ResponseEntity<EmployeeDto> getEmployeeById(@PathVariable(value = "id") Long employeeId)
+	public EmployeeDto getEmployeeById(@PathVariable(value = "id") Long employeeId)
 			throws ResourceNotFoundException {
-		// todo
-
-		return ResponseEntity.ok().body(new EmployeeDto());
+		EmployeeDto employeeDto=null;
+		employeeDto=employeeService.chercherEmployee(employeeId);
+		return employeeDto;
 	}
 
 	@PostMapping("/employees")
 	public EmployeeDto createEmployee(@Valid @RequestBody EmployeeDto employeeDto) {
+		EmployeeDto employee=null;
+		employee=employeeService.creerEmployee(employeeDto);
 		return employeeDto;
 	}
 
 	@PutMapping("/employees/{id}")
-	public ResponseEntity<EmployeeDto> updateEmployee(@PathVariable(value = "id") Long employeeId,
+	//public ResponseEntity<EmployeeDto> updateEmployee(@PathVariable(value = "id") Long employeeId,
+	public EmployeeDto updateEmployee(@PathVariable(value = "id") Long employeeId,
 													  @Valid @RequestBody EmployeeDto employeeDtoDetails) throws ResourceNotFoundException {
-		// todo;
-		EmployeeDto updatedEmployeeDto = employeeDtoDetails;
-		return ResponseEntity.ok(updatedEmployeeDto);
+		return employeeService.modifierEmployee(employeeId,employeeDtoDetails);
 	}
 
 	@DeleteMapping("/employees/{id}")
 	public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long employeeId)
 			throws ResourceNotFoundException {
-		// todo
+		boolean isDeleted=employeeService.supprimerEmployee(employeeId);
 		Map<String, Boolean> response = new HashMap<>();
-		response.put("deleted", Boolean.TRUE);
+		response.put("deleted", isDeleted);
 		return response;
+	}
+
+	/****************	URIs Employees	***********************/
+	@GetMapping("/equipes")
+	public List<EquipeDto> getAllEquipes() {
+		return equipeService.listerEquipes();
 	}
 
 	@PutMapping("/associe/{employeeId}/{equipeId}")

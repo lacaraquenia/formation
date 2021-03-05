@@ -10,16 +10,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour responseEmployees complex type.
+ * <p>Classe Java pour responseEquipes complex type.
  * 
  * <p>Le fragment de schema suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="responseEmployees">
+ * &lt;complexType name="responseEquipes">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="employees" type="{http://simple.java7.soap.formation.alltech.com/}employee" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="equipes" type="{http://simple.java7.soap.formation.alltech.com/}equipe" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,41 +29,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "responseEmployees", propOrder = {
-    "employees"
+@XmlType(name = "responseEquipes", propOrder = {
+    "equipes"
 })
-public class ResponseEmployees {
+public class ResponseEquipes {
 
     @XmlElement(nillable = true)
-    protected List<Employee> employees;
+    protected List<Equipe> equipes;
 
     /**
-     * Gets the value of the employees property.
+     * Gets the value of the equipes property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the employees property.
+     * This is why there is not a <CODE>set</CODE> method for the equipes property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getEmployees().add(newItem);
+     *    getEquipes().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Employee }
+     * {@link Equipe }
      * 
      * 
      */
-    public List<Employee> getEmployees() {
-        if (employees == null) {
-            employees = new ArrayList<Employee>();
+    public List<Equipe> getEquipes() {
+        if (equipes == null) {
+            equipes = new ArrayList<Equipe>();
         }
-        return this.employees;
+        return this.equipes;
     }
 
 }
