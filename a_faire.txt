@@ -1,0 +1,21 @@
+si tu veux tu peux télécharger et installer intelliJ Community (https://www.jetbrains.com/fr-fr/idea/download/#section=windows)
+
+voici l'architecture du projet 
+- webwervice Soap en java 7 (demosoap) qui fourni les données employee et Equipe
+- webservice rest en java8 (springboot2-jpa-crud-example) qui exploite les service soap de demosoap
+
+realiser les travaux décri dans les fichiers readme.txt 
+ C:\formation\demosoap\readme.txt 
+ puis C:\formation\springboot2-jpa-crud-example\readme.txt
+
+
+url wsdl http://localhost:8888/datas?wsdl
+
+demarrer ws saop
+compiler
+cd formation\demosoap
+..\..\jdks\jdk1.7.0_80\bin\java com.alltech.formation.soap.java7.simple.DatasPublisher
+
+generer client soap
+supprimer le contenu du package generated.soapclient
+C:\formation\jdks\jdk1.8.0_261\bin\wsimport -Xnocompile -d ./src/main/java -p net.guides.springboot2.springboot2jpacrudexample.generated.soapclient http://localhost:8888/datas?wsdl

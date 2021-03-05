@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e381a79f-f7a9-4ca8-a049-e47aec607bb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/DatasSoapJava7.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/DatasSoapJava7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/DatasSoapJava7WS.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/DatasSoapJava7WS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/datas/Datas.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/datas/Datas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/model/Equipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/alltech/formation/soap/java7/simple/model/Equipe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/DatasSoapJava7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/DatasSoapJava7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/DatasSoapJava7WS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/DatasSoapJava7WS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/model/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/model/Equipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/DatasSoapJava7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/DatasSoapJava7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ObjectFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEmployees.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEmployees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="e381a79f-f7a9-4ca8-a049-e47aec607bb4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,9 +13,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -80,15 +57,20 @@
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/alltech/formation/soap/java7/simple/datas/Datas.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

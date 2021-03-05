@@ -167,8 +167,22 @@ public class Datas {
 
     public static List<Equipe> associer(Long employeeId,Long equipeId){
         Employee employeeToAdd=findEmployeeById(employeeId);
-        //employees.
+        Equipe equipeToAdd=findEquipeById(equipeId);
+        if(null!=employeeToAdd && null!=equipeToAdd){
+            equipeToAdd.addEmployee(employeeToAdd);
+        }
         return equipes;
     }
+
+    public static Equipe getEquipeById(Long idEquipe){
+        for(Equipe equipe:equipes){
+            if(equipe.getId()==idEquipe){
+                return equipe;
+            }
+        }
+        return null;
+    }
+
+
 
 }

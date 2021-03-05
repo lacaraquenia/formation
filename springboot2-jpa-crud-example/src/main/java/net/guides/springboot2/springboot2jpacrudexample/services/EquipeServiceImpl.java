@@ -30,6 +30,19 @@ public class EquipeServiceImpl implements EquipeService {
 
     }
 
+    public boolean associer( Long employeeId, Long equipeId){
+        DatasSoapJava7WSService datasSoapJava7WSService	= new DatasSoapJava7WSService();
+        DatasSoapJava7 datasSoapJava7;
+        datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
+        //int sizeBeforeAssociation=datasSoapJava7.getEquipeById(equipeId).getEmployees().size();
+        int sizeBeforeAssociation=datasSoapJava7.getEquipeById(equipeId).getEquipe().getEmployees().size();
+        System.out.println("sizeBeforeAssociation: " + sizeBeforeAssociation);
+        datasSoapJava7.associer(employeeId,equipeId);
+        int sizeAfterAssociation=datasSoapJava7.getEquipeById(equipeId).getEquipe().getEmployees().size();
+        System.out.println("sizeAfterAssociation: " + sizeAfterAssociation);
+        return sizeBeforeAssociation+1==sizeAfterAssociation;
+    }
+
 
     //TODO: DUPLIQUEEEEEEEEE!
     protected EmployeeDto convertirEmployeeAEmployeeDto(Employee employee){

@@ -28,4 +28,9 @@ public class Equipe {
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
     }
+
+    public List<Employee> addEmployee(Employee employee){
+        employees.add(employee);
+        return employees;
+    }
 }

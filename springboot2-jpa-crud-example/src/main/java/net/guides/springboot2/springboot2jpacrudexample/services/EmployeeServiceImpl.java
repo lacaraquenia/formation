@@ -51,7 +51,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         DatasSoapJava7 datasSoapJava7;
         datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
         EmployeeDto employeeDtoCree=null;
-        Employee employeeCree=datasSoapJava7.createEmployee(convertirEmployeeDtoAEmployee(employeeACreer));
+        Employee employeeCree=datasSoapJava7.createEmployee(convertirEmployeeDtoAEmployee(employeeACreer)).getEmployee();
         employeeDtoCree=convertirEmployeeAEmployeeDto(employeeCree);
         return employeeDtoCree;
     }
@@ -97,7 +97,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         DatasSoapJava7 datasSoapJava7;
         datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
         EmployeeDto employeeTrouve=null;
-        employeeTrouve=convertirEmployeeAEmployeeDto(datasSoapJava7.getEmployeeById(idEmployee));
+        employeeTrouve=convertirEmployeeAEmployeeDto(datasSoapJava7.getEmployeeById(idEmployee).getEmployee());
         return employeeTrouve;
 
     }

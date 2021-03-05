@@ -46,6 +46,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ResponseEquipe }
+     * 
+     */
+    public ResponseEquipe createResponseEquipe() {
+        return new ResponseEquipe();
+    }
+
+    /**
      * Create an instance of {@link Employee }
      * 
      */

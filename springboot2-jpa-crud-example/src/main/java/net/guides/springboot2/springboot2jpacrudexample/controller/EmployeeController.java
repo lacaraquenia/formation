@@ -86,9 +86,9 @@ public class EmployeeController {
 	public Map<String, Boolean> associeEmployeeEquipe(
 			@PathVariable(value = "employeeId") Long employeeId,
 			@PathVariable(value = "equipeId") Long equipeId) throws ResourceNotFoundException {
-		// todo;
+		boolean isAssociated=equipeService.associer(employeeId,equipeId);
 		Map<String, Boolean> response = new HashMap<>();
-		response.put("associed", Boolean.TRUE);
+		response.put("associed", isAssociated);
 		return response;
 	}
 }
