@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlType;
 /**
  * <p>Classe Java pour employee complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schema suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="employee">
@@ -50,7 +50,7 @@ public class Employee {
     protected BigDecimal salaire;
 
     /**
-     * Obtient la valeur de la propriété ca.
+     * Obtient la valeur de la propriete ca.
      * 
      * @return
      *     possible object is
@@ -62,7 +62,7 @@ public class Employee {
     }
 
     /**
-     * Définit la valeur de la propriété ca.
+     * Definit la valeur de la propriete ca.
      * 
      * @param value
      *     allowed object is
@@ -74,7 +74,7 @@ public class Employee {
     }
 
     /**
-     * Obtient la valeur de la propriété emailId.
+     * Obtient la valeur de la propriete emailId.
      * 
      * @return
      *     possible object is
@@ -86,7 +86,7 @@ public class Employee {
     }
 
     /**
-     * Définit la valeur de la propriété emailId.
+     * Definit la valeur de la propriete emailId.
      * 
      * @param value
      *     allowed object is
@@ -98,7 +98,7 @@ public class Employee {
     }
 
     /**
-     * Obtient la valeur de la propriété firstName.
+     * Obtient la valeur de la propriete firstName.
      * 
      * @return
      *     possible object is
@@ -110,7 +110,7 @@ public class Employee {
     }
 
     /**
-     * Définit la valeur de la propriété firstName.
+     * Definit la valeur de la propriete firstName.
      * 
      * @param value
      *     allowed object is
@@ -122,7 +122,7 @@ public class Employee {
     }
 
     /**
-     * Obtient la valeur de la propriété id.
+     * Obtient la valeur de la propriete id.
      * 
      */
     public long getId() {
@@ -130,7 +130,7 @@ public class Employee {
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * Definit la valeur de la propriete id.
      * 
      */
     public void setId(long value) {
@@ -138,7 +138,7 @@ public class Employee {
     }
 
     /**
-     * Obtient la valeur de la propriété lastName.
+     * Obtient la valeur de la propriete lastName.
      * 
      * @return
      *     possible object is
@@ -150,7 +150,7 @@ public class Employee {
     }
 
     /**
-     * Définit la valeur de la propriété lastName.
+     * Definit la valeur de la propriete lastName.
      * 
      * @param value
      *     allowed object is
@@ -162,7 +162,7 @@ public class Employee {
     }
 
     /**
-     * Obtient la valeur de la propriété salaire.
+     * Obtient la valeur de la propriete salaire.
      * 
      * @return
      *     possible object is
@@ -174,7 +174,7 @@ public class Employee {
     }
 
     /**
-     * Définit la valeur de la propriété salaire.
+     * Definit la valeur de la propriete salaire.
      * 
      * @param value
      *     allowed object is

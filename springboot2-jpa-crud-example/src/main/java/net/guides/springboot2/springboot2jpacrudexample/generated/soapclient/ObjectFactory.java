@@ -38,11 +38,35 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link ResponseEquipes }
+     * 
+     */
+    public ResponseEquipes createResponseEquipes() {
+        return new ResponseEquipes();
+    }
+
+    /**
      * Create an instance of {@link Employee }
      * 
      */
     public Employee createEmployee() {
         return new Employee();
+    }
+
+    /**
+     * Create an instance of {@link Equipe }
+     * 
+     */
+    public Equipe createEquipe() {
+        return new Equipe();
+    }
+
+    /**
+     * Create an instance of {@link ResponseEmployee }
+     * 
+     */
+    public ResponseEmployee createResponseEmployee() {
+        return new ResponseEmployee();
     }
 
 }

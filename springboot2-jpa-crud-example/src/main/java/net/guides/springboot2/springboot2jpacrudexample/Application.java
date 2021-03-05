@@ -19,8 +19,8 @@ public class Application {
 	@PostConstruct
 	private void init(){
 		System.out.println("init");
-		MockEmployee.init();
-		MockEquipe.init();
+		//MockEmployee.init();
+		//MockEquipe.init();
 	}
 
 
