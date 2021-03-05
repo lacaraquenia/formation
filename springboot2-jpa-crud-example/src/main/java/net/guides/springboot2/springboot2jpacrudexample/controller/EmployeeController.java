@@ -100,7 +100,6 @@ public class EmployeeController {
 	/****************	URIs Additionnels	***********************/
 	@GetMapping("/statistique")
 	public Statistique statistiqueAllEmployees(){
-		//TODO
 		return statistiqueService.getStatistiqueAllEmployees();
 	}
 

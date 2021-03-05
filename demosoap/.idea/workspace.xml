@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e381a79f-f7a9-4ca8-a049-e47aec607bb4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Avancement TP SOAP REST.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Avancement TP SOAP REST.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/StatistiqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/StatistiqueService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/StatistiqueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/StatistiqueServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
