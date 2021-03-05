@@ -18,9 +18,12 @@ QUESTIONS FABRICE:
 	je ne sais pas quand utiliser EmployeeDto et Employee! (EmployeeServiceImpl.creerEmployee: je convertis mon dto à employee pour le reconvertir après!)
 	Je veux ne pas pouvoir créer un employee si l'id existe déjà. Pour l'instant je retourne null et postman me le dis. Y-a-t-il une meilleure façon de le faire?
 	Je n'arrive pas à debugger Rest. On pourrait essayer avec createEmployee
-	Debugger soap
+	Debugger soap: log
 	c'est normal qu'à chaque fois que je change demosoap j'ai les problèmes:
 		pour importer les classes
 		utf-8
-	quel est l'ordre de choses à faire quand je change demosoap?
 	j'ai refactorisé la récupération de l'instance de demoSoapJava7 
+
+QUESTIONS FABRICE:
+	@Autowired dans EmployeeServiceImpl et EquipeServiceImpl me donne erreur lors du run: Consider defining a bean of type....
+	Pour l'endpoint "statistique" je crée une classe Statistique?

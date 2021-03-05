@@ -19,4 +19,6 @@ public interface DatasSoapJava7 {
 	ResponseEmployee getEmployeeById(Long id);
 	ResponseEquipes associer( Long employeeId, Long equipeId);
 	ResponseEquipe getEquipeById(Long equipeId);
+	ResponseStatistique getStatistiqueAllEmployees();
+	ResponseStatistique getStatistiqueEquipe(Long id);
 }

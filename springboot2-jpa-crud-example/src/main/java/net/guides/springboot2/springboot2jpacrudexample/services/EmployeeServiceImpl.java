@@ -12,6 +12,54 @@ import java.util.stream.Collectors;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
+
+
+/*
+    @Autowired
+    DatasSoapJava7 datasSoapJava7;
+    //@ComponentScan({"net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.DatasSoapJava7"})
+
+
+
+    @Override
+    public List<EmployeeDto> listerEmployees() {
+        return datasSoapJava7.getAllEmployees().getEmployees().stream()
+                .map(employee -> convertirEmployeeAEmployeeDto(employee)).collect(Collectors.toList());
+    }
+
+
+    @Override
+    public EmployeeDto creerEmployee(EmployeeDto employeeACreer){
+        EmployeeDto employeeDtoCree=null;
+        Employee employeeCree=datasSoapJava7.createEmployee(convertirEmployeeDtoAEmployee(employeeACreer)).getEmployee();
+        employeeDtoCree=convertirEmployeeAEmployeeDto(employeeCree);
+        return employeeDtoCree;
+    }
+
+
+    @Override
+    public EmployeeDto chercherEmployee(Long idEmployee){
+        return convertirEmployeeAEmployeeDto(datasSoapJava7.getEmployeeById(idEmployee).getEmployee());
+    }
+
+    @Override
+    public EmployeeDto modifierEmployee(Long idEmployee,EmployeeDto employee){
+        EmployeeDto employeeModifieDto=null;
+        Employee employeeModifie=datasSoapJava7.updateEmployee(idEmployee,convertirEmployeeDtoAEmployee(employee)).getEmployee();
+        employeeModifieDto=convertirEmployeeAEmployeeDto(employeeModifie);
+        return employeeModifieDto;
+    }
+
+    @Override
+    public boolean supprimerEmployee(Long id){
+        boolean isDeleted=false;
+        int sizeAvantDeletion=datasSoapJava7.getAllEmployees().getEmployees().size();
+        int sizeApresDeletion=datasSoapJava7.deleteEmployee(id).getEmployees().size();
+        isDeleted=sizeAvantDeletion-1==sizeApresDeletion;
+        return isDeleted;
+    }
+*/
+
     private DatasSoapJava7WSService datasSoapJava7WSService;
     private DatasSoapJava7 datasSoapJava7;
 
@@ -27,46 +75,45 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List<EmployeeDto> listerEmployees() {
         return getDataSoapJava7.get().getAllEmployees().getEmployees().stream()
                 .map(employee -> convertirEmployeeAEmployeeDto(employee)).collect(Collectors.toList());
-
     }
 
-    /**
-     *     public EmployeeDto creerEmployee(EmployeeDto employeeACreer){
-     *         DatasSoapJava7WSService datasSoapJava7WSService	= new DatasSoapJava7WSService();
-     *         DatasSoapJava7 datasSoapJava7;
-     *         datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
-     *         EmployeeDto employeeDtoCree=null;
-     *         Employee employeeFound=datasSoapJava7.getEmployeeById(employeeACreer.getId());
-     *         if(null!=employeeFound){
-     *             Employee employeeCree=datasSoapJava7.createEmployee(convertirEmployeeDtoAEmployee(employeeACreer));
-     *             employeeDtoCree=convertirEmployeeAEmployeeDto(employeeCree);
-     *         }
-     *         return employeeDtoCree;
-     *     }
-     */
 
     @Override
     public EmployeeDto creerEmployee(EmployeeDto employeeACreer){
-        DatasSoapJava7WSService datasSoapJava7WSService	= new DatasSoapJava7WSService();
-        DatasSoapJava7 datasSoapJava7;
-        datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
         EmployeeDto employeeDtoCree=null;
-        Employee employeeCree=datasSoapJava7.createEmployee(convertirEmployeeDtoAEmployee(employeeACreer)).getEmployee();
+        Employee employeeCree=getDataSoapJava7.get().createEmployee(convertirEmployeeDtoAEmployee(employeeACreer)).getEmployee();
         employeeDtoCree=convertirEmployeeAEmployeeDto(employeeCree);
         return employeeDtoCree;
     }
 
 
 
-    /*public List<EmployeeDto> supprimerEmployee(Long idEmployeeASupprimer){
-        DatasSoapJava7WSService datasSoapJava7WSService	= new DatasSoapJava7WSService();
-        DatasSoapJava7 datasSoapJava7;
-        datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
-        List<EmployeeDto> nouvelleListeEmployees=datasSoapJava7.deleteEmployee(idEmployeeASupprimer).getEmployees().stream()
-                .map(employee -> convertirEmployeeAEmployeeDto(employee)).collect(Collectors.toList());
-        return nouvelleListeEmployees;
-    }*/
+    @Override
+    public EmployeeDto chercherEmployee(Long idEmployee){
+        return convertirEmployeeAEmployeeDto(getDataSoapJava7.get().getEmployeeById(idEmployee).getEmployee());
+    }
 
+
+
+    @Override
+    public EmployeeDto modifierEmployee(Long idEmployee,EmployeeDto employee){
+        EmployeeDto employeeModifieDto=null;
+        Employee employeeModifie=getDataSoapJava7.get().updateEmployee(idEmployee,convertirEmployeeDtoAEmployee(employee)).getEmployee();
+        employeeModifieDto=convertirEmployeeAEmployeeDto(employeeModifie);
+        return employeeModifieDto;
+    }
+
+    @Override
+    public boolean supprimerEmployee(Long id){
+        boolean isDeleted=false;
+        int sizeAvantDeletion=getDataSoapJava7.get().getAllEmployees().getEmployees().size();
+        int sizeApresDeletion=getDataSoapJava7.get().deleteEmployee(id).getEmployees().size();
+        isDeleted=sizeAvantDeletion-1==sizeApresDeletion;
+        return isDeleted;
+    }
+
+
+    /********************************************Méthodes utilitaires*/
     protected Employee convertirEmployeeDtoAEmployee(EmployeeDto employeeDto){
         Employee employee=new Employee();
         employee.setId(employeeDto.getId());
@@ -88,40 +135,4 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeDto.setCa(employee.getCa());
         return employeeDto;
     }
-
-
-
-    @Override
-    public EmployeeDto chercherEmployee(Long idEmployee){
-        DatasSoapJava7WSService datasSoapJava7WSService	= new DatasSoapJava7WSService();
-        DatasSoapJava7 datasSoapJava7;
-        datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
-        EmployeeDto employeeTrouve=null;
-        employeeTrouve=convertirEmployeeAEmployeeDto(datasSoapJava7.getEmployeeById(idEmployee).getEmployee());
-        return employeeTrouve;
-
-    }
-
-
-
-    @Override
-    public EmployeeDto modifierEmployee(Long idEmployee,EmployeeDto employee){
-        DatasSoapJava7WSService datasSoapJava7WSService	= new DatasSoapJava7WSService();
-        DatasSoapJava7 datasSoapJava7;
-        datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
-        EmployeeDto employeeModifieDto=null;
-        Employee employeeModifie=datasSoapJava7.updateEmployee(idEmployee,convertirEmployeeDtoAEmployee(employee)).getEmployee();
-        employeeModifieDto=convertirEmployeeAEmployeeDto(employeeModifie);
-        return employeeModifieDto;
-    }
-
-    @Override
-    public boolean supprimerEmployee(Long id){
-        boolean isDeleted=false;
-        int sizeAvantDeletion=getDataSoapJava7.get().getAllEmployees().getEmployees().size();
-        int sizeApresDeletion=getDataSoapJava7.get().deleteEmployee(id).getEmployees().size();
-        isDeleted=sizeAvantDeletion-1==sizeApresDeletion;
-        return isDeleted;
-    }
-
 }

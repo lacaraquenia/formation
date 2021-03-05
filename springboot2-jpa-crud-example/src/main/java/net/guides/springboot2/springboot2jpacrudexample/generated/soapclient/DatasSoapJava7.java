@@ -26,16 +26,6 @@ public interface DatasSoapJava7 {
 
     /**
      * 
-     * @return
-     *     returns net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.ResponseEquipes
-     */
-    @WebMethod
-    @WebResult(partName = "return")
-    @Action(input = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getAllEquipesRequest", output = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getAllEquipesResponse")
-    public ResponseEquipes getAllEquipes();
-
-    /**
-     * 
      * @param arg1
      * @param arg0
      * @return
@@ -49,6 +39,16 @@ public interface DatasSoapJava7 {
         long arg0,
         @WebParam(name = "arg1", partName = "arg1")
         long arg1);
+
+    /**
+     * 
+     * @return
+     *     returns net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.ResponseEquipes
+     */
+    @WebMethod
+    @WebResult(partName = "return")
+    @Action(input = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getAllEquipesRequest", output = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getAllEquipesResponse")
+    public ResponseEquipes getAllEquipes();
 
     /**
      * 
@@ -90,12 +90,38 @@ public interface DatasSoapJava7 {
      * 
      * @param arg0
      * @return
+     *     returns net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.ResponseStatistique
+     */
+    @WebMethod
+    @WebResult(partName = "return")
+    @Action(input = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getStatistiqueEquipeRequest", output = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getStatistiqueEquipeResponse")
+    public ResponseStatistique getStatistiqueEquipe(
+        @WebParam(name = "arg0", partName = "arg0")
+        long arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
      *     returns net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.ResponseEmployee
      */
     @WebMethod
     @WebResult(partName = "return")
     @Action(input = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getEmployeeByIdRequest", output = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getEmployeeByIdResponse")
     public ResponseEmployee getEmployeeById(
+        @WebParam(name = "arg0", partName = "arg0")
+        long arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.ResponseEmployees
+     */
+    @WebMethod
+    @WebResult(partName = "return")
+    @Action(input = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/deleteEmployeeRequest", output = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/deleteEmployeeResponse")
+    public ResponseEmployees deleteEmployee(
         @WebParam(name = "arg0", partName = "arg0")
         long arg0);
 
@@ -117,15 +143,12 @@ public interface DatasSoapJava7 {
 
     /**
      * 
-     * @param arg0
      * @return
-     *     returns net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.ResponseEmployees
+     *     returns net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.ResponseStatistique
      */
     @WebMethod
     @WebResult(partName = "return")
-    @Action(input = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/deleteEmployeeRequest", output = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/deleteEmployeeResponse")
-    public ResponseEmployees deleteEmployee(
-        @WebParam(name = "arg0", partName = "arg0")
-        long arg0);
+    @Action(input = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getStatistiqueAllEmployeesRequest", output = "http://simple.java7.soap.formation.alltech.com/DatasSoapJava7/getStatistiqueAllEmployeesResponse")
+    public ResponseStatistique getStatistiqueAllEmployees();
 
 }

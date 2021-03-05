@@ -8,10 +8,11 @@ import java.util.Map;
 import javax.validation.Valid;
 
 import net.guides.springboot2.springboot2jpacrudexample.dto.EquipeDto;
+import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.Statistique;
 import net.guides.springboot2.springboot2jpacrudexample.services.EmployeeService;
 import net.guides.springboot2.springboot2jpacrudexample.services.EquipeService;
+import net.guides.springboot2.springboot2jpacrudexample.services.StatistiqueService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,6 +37,9 @@ public class EmployeeController {
 
 	@Autowired
 	EquipeService equipeService;
+
+	@Autowired
+	StatistiqueService statistiqueService;
 
 
 	/****************	URIs Employees	***********************/
@@ -91,4 +95,12 @@ public class EmployeeController {
 		response.put("associed", isAssociated);
 		return response;
 	}
+
+	/****************	URIs Additionnels	***********************/
+	/*@GetMapping("/statistique")
+	public Statistique statistiqueAllEmployees(){
+		return statistiqueService.getStatistiqueAllEmployees();
+	}*/
+
+
 }
