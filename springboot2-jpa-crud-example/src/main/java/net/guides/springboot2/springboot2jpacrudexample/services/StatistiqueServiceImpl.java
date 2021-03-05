@@ -4,10 +4,12 @@ import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.Dat
 import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.DatasSoapJava7WSService;
 import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.Employee;
 import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.Statistique;
+import org.springframework.stereotype.Service;
 
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
+@Service
 public class StatistiqueServiceImpl  implements  StatistiqueService{
 
     private Statistique statistiqueAllEmployes=null;
@@ -21,7 +23,7 @@ public class StatistiqueServiceImpl  implements  StatistiqueService{
         return statistiqueAllEmployes;
     }
 
-    public void calculerStatistiqueAllEmployees(){
+    private void calculerStatistiqueAllEmployees(){
         DatasSoapJava7WSService datasSoapJava7WSService	= new DatasSoapJava7WSService();
         DatasSoapJava7 datasSoapJava7;
         datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();

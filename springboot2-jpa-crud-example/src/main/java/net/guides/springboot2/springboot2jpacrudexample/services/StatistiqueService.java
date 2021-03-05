@@ -6,5 +6,5 @@ public interface StatistiqueService {
 
     public Statistique getStatistiqueAllEmployees();
 
-    public void calculerStatistiqueAllEmployees();
+    //protected void calculerStatistiqueAllEmployees();
 }
