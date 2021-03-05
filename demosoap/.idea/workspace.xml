@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e381a79f-f7a9-4ca8-a049-e47aec607bb4" name="Default Changelist" comment="" />
+    <list default="true" id="e381a79f-f7a9-4ca8-a049-e47aec607bb4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/DatasSoapJava7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/DatasSoapJava7WSService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Equipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ObjectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEmployees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEquipe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseEquipes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/ResponseStatistique.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/Statistique.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/generated/soapclient/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EquipeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/EquipeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/StatistiqueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot2-jpa-crud-example/src/main/java/net/guides/springboot2/springboot2jpacrudexample/services/StatistiqueServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +31,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -56,6 +77,17 @@
       <updated>1596578255937</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

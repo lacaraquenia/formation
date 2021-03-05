@@ -38,7 +38,7 @@ public class EmployeeController {
 	@Autowired
 	EquipeService equipeService;
 
-	@Autowired
+
 	StatistiqueService statistiqueService;
 
 
@@ -97,10 +97,15 @@ public class EmployeeController {
 	}
 
 	/****************	URIs Additionnels	***********************/
-	/*@GetMapping("/statistique")
+	@GetMapping("/statistique")
 	public Statistique statistiqueAllEmployees(){
-		return statistiqueService.getStatistiqueAllEmployees();
-	}*/
+		if(null==statistiqueService){
+			//statistiqueService=new Statistique();
+		}
+		//return statistiqueService.getStatistiqueAllEmployees();
+		//TODO
+		return null;
+	}
 
 
 }
