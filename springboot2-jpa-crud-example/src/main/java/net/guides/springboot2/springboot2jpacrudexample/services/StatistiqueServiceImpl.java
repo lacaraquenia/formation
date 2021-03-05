@@ -28,38 +28,40 @@ public class StatistiqueServiceImpl  implements  StatistiqueService{
         DatasSoapJava7WSService datasSoapJava7WSService	= new DatasSoapJava7WSService();
         DatasSoapJava7 datasSoapJava7;
         datasSoapJava7 = datasSoapJava7WSService.getDatasSoapJava7WSPort();
+        statistiqueAllEmployes=calculerStatistiques(datasSoapJava7.getAllEmployees().getEmployees());
+    }
 
-        DoubleSummaryStatistics summaryStatisticsChiffreAffaires=datasSoapJava7.getAllEmployees().getEmployees()
+    private Statistique calculerStatistiques(List<Employee> employeeList){
+        Statistique statistique=new Statistique();
+
+        DoubleSummaryStatistics summaryStatisticsChiffreAffaires=employeeList
                 .stream().mapToDouble(x->x.getCa().doubleValue()).summaryStatistics();
 
-        DoubleSummaryStatistics summaryStatisticsSalaires=datasSoapJava7.getAllEmployees().getEmployees()
+        DoubleSummaryStatistics summaryStatisticsSalaires=employeeList
                 .stream().mapToDouble(x->x.getSalaire().doubleValue()).summaryStatistics();
 
-        DoubleSummaryStatistics summaryStatisticsRentabilite=datasSoapJava7.getAllEmployees().getEmployees().stream()
+        DoubleSummaryStatistics summaryStatisticsRentabilite=employeeList.stream()
                 .mapToDouble(x->x.getCa().doubleValue()-x.getSalaire().doubleValue()).summaryStatistics();
 
         System.out.println("****************************************************************");
 
         //1-    le chiffre affaire total
-        statistiqueAllEmployes.setChiffreAffairesTotal(summaryStatisticsChiffreAffaires.getSum());
+        statistique.setChiffreAffairesTotal(summaryStatisticsChiffreAffaires.getSum());
 
         //2-    le benefice total (affaire - salaire)
-        statistiqueAllEmployes.setBeneficeTotal(statistiqueAllEmployes.getChiffreAffairesTotal()-summaryStatisticsSalaires.getSum());
-        double chiffreAffairesMax=summaryStatisticsChiffreAffaires.getMax();
-        double chiffreAffairesMin=summaryStatisticsChiffreAffaires.getMin();
-        double beneficeMoyen=summaryStatisticsChiffreAffaires.getAverage()-summaryStatisticsSalaires.getAverage();
+        statistique.setBeneficeTotal(statistique.getChiffreAffairesTotal()-summaryStatisticsSalaires.getSum());
 
         //3-    le chiffre affaire max (nom de l 'employee + montant)
-        statistiqueAllEmployes.setEmployeeChiffreAffairesMax(datasSoapJava7.getAllEmployees().getEmployees()
-                .stream().filter(x->x.getCa().doubleValue()==chiffreAffairesMax).findFirst().orElse(new Employee()));
+        statistique.setEmployeeChiffreAffairesMax(employeeList
+                .stream().filter(x->x.getCa().doubleValue()==summaryStatisticsChiffreAffaires.getMax()).findFirst().orElse(new Employee()));
 
         //4-    le chiffre affaire  min  (nom de l 'employee + montant)
-        statistiqueAllEmployes.setEmployeeChiffreAffairesMin(datasSoapJava7.getAllEmployees().getEmployees()
-                .stream().filter(x->x.getCa().doubleValue()==chiffreAffairesMin).findFirst().orElse(new Employee()));
+        statistique.setEmployeeChiffreAffairesMin(employeeList
+                .stream().filter(x->x.getCa().doubleValue()==summaryStatisticsChiffreAffaires.getMin()).findFirst().orElse(new Employee()));
 
-        System.out.println("CA total: " + statistiqueAllEmployes.getChiffreAffairesTotal());
+        System.out.println("CA total: " + statistique.getChiffreAffairesTotal());
         System.out.println("coût total salaires:  " + summaryStatisticsSalaires.getSum());
-        System.out.println("benefice total(affaire - salaire): " + statistiqueAllEmployes.getBeneficeTotal());
+        System.out.println("benefice total(affaire - salaire): " + statistique.getBeneficeTotal());
         System.out.println("CA max: " + summaryStatisticsChiffreAffaires.getMax());
         System.out.println("CA min: " + summaryStatisticsChiffreAffaires.getMin());
         System.out.println("Rentabilité max: " + summaryStatisticsRentabilite.getMax());
@@ -67,20 +69,18 @@ public class StatistiqueServiceImpl  implements  StatistiqueService{
         System.out.println("Rentabilité moyenne: " + summaryStatisticsRentabilite.getAverage());
 
         //5-    employee le plus rentable
-        statistiqueAllEmployes.setEmployeePlusRentable(datasSoapJava7.getAllEmployees().getEmployees().stream()
-                .filter(x->x.getCa().doubleValue()-x.getSalaire().doubleValue()==summaryStatisticsRentabilite.getMax()).findFirst().orElse(new Employee()));
+        statistique.setEmployeePlusRentable(employeeList.stream()
+                .filter(x->x.getCa().doubleValue()-x.getSalaire().doubleValue()==summaryStatisticsRentabilite.getMax())
+                .findFirst().orElse(new Employee()));
 
-        //List<Employee> employeesPeuRentables=null;
-        //employeesPeuRentables=datasSoapJava7.getAllEmployees().getEmployees().stream()
-        statistiqueAllEmployes.setEmployeesPeuRentables(datasSoapJava7.getAllEmployees().getEmployees().stream()
-                .filter(x->x.getCa().doubleValue()-x.getSalaire().doubleValue()<summaryStatisticsRentabilite.getAverage()).collect(Collectors.toList()));
+        //6-    liste des employees les moins rentables
+        statistique.getEmployeesPeuRentables().addAll(employeeList.stream()
+                .filter(x->x.getCa().doubleValue()-x.getSalaire().doubleValue()<summaryStatisticsRentabilite.getAverage())
+                .collect(Collectors.toList()));
 
         System.out.println("****************************************************************");
-    }
 
-    private Statistique calculerStatistiques(List<Employee> employeeList){
-        //TODO
-        return null;
+        return statistique;
     }
 }
 

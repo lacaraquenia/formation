@@ -191,11 +191,6 @@ public class Statistique {
         return this.employeesPeuRentables;
     }
 
-
-    public void setEmployeesPeuRentables(List<Employee> employeesPeuRentables) {
-        this.employeesPeuRentables = employeesPeuRentables;
-    }
-
     /**
      * Obtient la valeur de la propriete equipe.
      * 

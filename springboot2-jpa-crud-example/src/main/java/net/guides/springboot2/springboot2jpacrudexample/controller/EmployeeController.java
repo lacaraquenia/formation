@@ -12,7 +12,6 @@ import net.guides.springboot2.springboot2jpacrudexample.generated.soapclient.Sta
 import net.guides.springboot2.springboot2jpacrudexample.services.EmployeeService;
 import net.guides.springboot2.springboot2jpacrudexample.services.EquipeService;
 import net.guides.springboot2.springboot2jpacrudexample.services.StatistiqueService;
-import net.guides.springboot2.springboot2jpacrudexample.services.StatistiqueServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
